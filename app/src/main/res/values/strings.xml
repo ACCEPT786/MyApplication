@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MyApplication</string>
+    <string name="title_menu">菜单</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_personal">个人信息</string>
+</resources>

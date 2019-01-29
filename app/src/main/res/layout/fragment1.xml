@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollview1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white">
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="start_image" />
+
+        <Button
+            android:background="@drawable/border"
+            android:textColor="@color/black"
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/sample_0"
+            android:drawableLeft="@drawable/sample_0"
+            android:text="   图片"
+            android:gravity="start|center_horizontal|center_vertical"/>
+
+        <Button
+            android:background="@drawable/border"
+            android:textColor="@color/black"
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/sample_2"
+            android:drawableLeft="@drawable/sample_2"
+            android:text="   图片"
+            android:gravity="start|center_horizontal|center_vertical"/>
+
+        <Button
+            android:background="@drawable/border"
+            android:textColor="@color/black"
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/sample_0"
+            android:drawableLeft="@drawable/sample_0"
+            android:text="   视频"
+            android:gravity="start|center_horizontal|center_vertical"/>
+
+        <Button
+            android:background="@drawable/border"
+            android:textColor="@color/black"
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/sample_0"
+            android:drawableLeft="@drawable/sample_0"
+            android:text="   菜单"
+            android:gravity="start|center_horizontal|center_vertical"/>
+
+        <Button
+            android:background="@drawable/border"
+            android:textColor="@color/black"
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/sample_0"
+            android:drawableLeft="@drawable/sample_0"
+            android:text="   菜单"
+            android:gravity="start|center_horizontal|center_vertical"/>
+
+        <Button
+            android:background="@drawable/border"
+            android:textColor="@color/black"
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/sample_0"
+            android:drawableLeft="@drawable/sample_0"
+            android:text="   菜单"
+            android:gravity="start|center_horizontal|center_vertical"/>
+
+        <Button
+            android:background="@drawable/border"
+            android:textColor="@color/black"
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/sample_0"
+            android:drawableLeft="@drawable/sample_0"
+            android:text="   菜单"
+            android:gravity="start|center_horizontal|center_vertical"/>
+    </LinearLayout>
+</ScrollView>
