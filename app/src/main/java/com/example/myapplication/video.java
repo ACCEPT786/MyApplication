@@ -1,9 +1,6 @@
 package com.example.myapplication;
 
-import java.io.File;
 import android.app.Activity;
-import android.content.Intent;
-import android.content.res.Configuration;
 import android.media.MediaPlayer;
 import android.media.MediaPlayer.OnCompletionListener;
 import android.net.Uri;
@@ -27,8 +24,9 @@ public class video extends Activity {
         setContentView(R.layout.video);
 
         video=findViewById(R.id.video);
-        MediaController mc=new MediaController(video.this);       // 创建一个MediaController对象
+        MediaController mc = new MediaController(video.this);       // 创建一个MediaController对象
         video.setMediaController(mc);       // 将VideoView与MediaController关联起来
+        mc.setMediaPlayer(video);
         video.setVideoURI(Uri.parse("android.resource://com.example.myapplication/" + R.raw.video1));
         video.requestFocus();       // 设置VideoView获取焦点
 
@@ -37,7 +35,11 @@ public class video extends Activity {
         }catch(Exception e) {
             e.printStackTrace();
         }
-
+        //记录视频播放进度
+        if(savedInstanceState != null){
+            int ss = savedInstanceState.getInt("aa");
+            video.seekTo(ss);
+        }
         // 设置VideoView的Completion事件监听器
         video.setOnCompletionListener(new OnCompletionListener() {
             @Override
@@ -46,8 +48,12 @@ public class video extends Activity {
                 finish();
             }
         });
-
-
+        }
+    //继续播放视频
+    @Override
+    protected void onSaveInstanceState(Bundle outState){
+        super.onSaveInstanceState(outState);
+        outState.putInt("aa", video.getCurrentPosition());
     }
 
 

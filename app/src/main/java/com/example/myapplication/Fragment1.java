@@ -26,6 +26,7 @@ public class Fragment1 extends Fragment {
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
+
         textView1=getActivity().findViewById(R.id.textView1);
         textView1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -62,7 +63,5 @@ public class Fragment1 extends Fragment {
                 startActivity(i);
             }
         });
-
-
     }
 }
